@@ -54,7 +54,7 @@ img {vertical-align: top;}
 .first .container {
     justify-content: space-between;
     align-items: center;
-    background: url(/webdev-first/assets/images/bg-image.png) center no-repeat;
+    background: url(/webdev/webdev-first/assets/images/bg-image.png) center no-repeat;
 }
 .header {
     width: 100%;
@@ -182,7 +182,7 @@ img {vertical-align: top;}
     margin: 0 auto;
     width: 45px;
     height: 45px;
-    background: url(/webdev-first/assets/icons/userpic.png);
+    background: url(/webdev/webdev-first/assets/icons/userpic.png);
     border-radius: 50%;
 }
 .community__info h2 {
@@ -268,7 +268,7 @@ implement__info h2 {
     background: black;
 }
 .sign .container {
-    background: url(/webdev-first/assets/images/pexels-christina-morillo-1181675\ 1.png);
+    background: url(/webdev/webdev-first/assets/images/pexels-christina-morillo-1181675\ 1.png);
     text-align: center;
 }
 .sign__info {
@@ -295,10 +295,10 @@ implement__info h2 {
 .sign__check {
     width: 66px;
     height: 46px;
-    background: url(/webdev-first/assets/icons/check-icon.png) center/16px 13px no-repeat, #00AFDB;
+    background: url(/webdev/webdev-first/assets/icons/check-icon.png) center/16px 13px no-repeat, #00AFDB;
 }
 .sign__check:hover {
-    background: url(/webdev-first/assets/icons/check-icon.png) center/18px 15px no-repeat, #009CC2;
+    background: url(/webdev/webdev-first/assets/icons/check-icon.png) center/18px 15px no-repeat, #009CC2;
     cursor: pointer;
 }
 
@@ -351,10 +351,10 @@ implement__info h2 {
     align-items: center;
 }
 .apple {
-    background: url(/webdev-first/assets/icons/apple.png) center/16px 18px no-repeat, #009CC2;
+    background: url(/webdev/webdev-first/assets/icons/apple.png) center/16px 18px no-repeat, #009CC2;
 }
 .android {
-    background: url(/webdev-first/assets/icons/android.png) center/16px 18px no-repeat, #009CC2;
+    background: url(/webdev/webdev-first/assets/icons/android.png) center/16px 18px no-repeat, #009CC2;
 }
 
 .footer {    
