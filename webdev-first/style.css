@@ -1,4 +1,4 @@
-/* Canceling of all auto styles */
+/* Zeroing of all auto styles */
 * { margin: 0;
     padding: 0;
     border: 0;
@@ -41,13 +41,8 @@ img {vertical-align: top;}
 .header {
     width: 100%;
     margin: 0 auto;
-    /*верна ли высота проверить */ 
     height: 0; 
     z-index: 50;   
-    /*
-    top: 0;
-    left: 0;
-    */
 }
 .container {
     max-width: 1600px;
@@ -179,7 +174,7 @@ img {vertical-align: top;}
 .rappresent__info h2 {
     max-width: 367px;
 }
-.rappresent__info p {
+.rappresent__text {
     max-width: 407px;
     margin: 20px auto 30px;
     color: #4E4E4E;
@@ -200,7 +195,7 @@ img {vertical-align: top;}
 .community__content {
     margin: 120px auto 140px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 .community__info {
     display: flex;
@@ -229,7 +224,6 @@ img {vertical-align: top;}
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: space-between;
 }
 .community__navigation {
     width: 70px;
@@ -265,14 +259,19 @@ img {vertical-align: top;}
 }
 .community__images {
     display: flex;
-}
-.community__images:last-child {
     overflow: hidden;
 }
 .community__img {
     max-width: 407px;
     max-height: 244px;
     margin: 0 15px;
+}
+.community__img:first-child {
+    margin-left: 0;
+}
+.community__img:last-child {
+    overflow: hidden;
+    margin-right: 0;
 }
 
 .implement__content {
@@ -420,7 +419,7 @@ img {vertical-align: top;}
 .footer__img {
     width: 44px;
     height: 44px;
-    margin: 0 300px; /*проверить при адапташке */
+    margin: 0 300px; 
 }
 .footer__text {
     color: #818181;
@@ -443,9 +442,135 @@ img {vertical-align: top;}
     color: #373737;
 }
 
-@media () {
+@media (max-width: 1200px) {
     .first__content {
-        /* при адапташке марджины уменьшить и вписать */
-         margin: 230px auto 180px;
+        margin: 200px auto 140px;
     }
+    .first__listsocials {
+        margin-bottom: 60px;
+    }
+    .rappresent__content {
+        margin: 100px auto 120px;
+    }
+    .rappresent__img {
+        margin-left: 50px;
+    }
+    .rappresent__text {
+        max-width: 380px;
+    }
+    .community__content {
+        margin: 100px auto 120px;
+    }
+    .community__info {
+        margin-bottom: 20px;
+        margin-right: 50px;
+    }
+    .implement__content {
+        margin: 100px auto 120px;
+    }
+    .implement__img {
+        margin-right: 100px;
+    }
+    .implement__info p {
+        max-width: 330px;
+    }
+    .sign .container {
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .sign__info {
+        margin: 100px auto 120px;
+    }
+    .footer__img {
+       margin: 0 220px; 
+    }
+    .text-bold {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 992px) {
+    .first__content {
+        margin: 180px auto 80px;
+    }
+    .first__title {
+        font-size: 48px;
+    }
+    .first__text {
+        max-width: 380px;
+        margin: 50px auto;
+    }    
+    .rappresent__content {
+        margin: 60px 100px 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .rappresent__info {
+        margin-right: 100px;
+    }
+    .rappresent__text {
+        max-width: 300px;
+    }
+    .rappresent__img {
+        margin: 0;
+    }
+    .rappresent__img img {
+        max-width: 360px;
+        object-fit: cover;
+    }
+    .community__content {
+        margin: 60px auto 80px;
+    }
+    .community__info p {
+        max-width: 200px;
+    }
+    .community__pictires {
+        overflow: hidden;
+    }
+    .community__navigation {
+        margin: 0 275px 15px;
+    }
+    .implement__content {
+        margin: 60px 30px 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .implement__img {        
+        margin-right: 100px;
+    }
+    .implement__img img {
+        max-width: 307px;
+        object-fit: contain;   
+    }
+    .sign .container {
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .sign__info {
+        margin: 60px 30px 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sign__input {
+        padding: 13px 140px 13px 24px;
+    }
+    .download__content {
+        margin: 60px 30px 80px;
+    }
+    .download__content p {
+        max-width: 320px;
+    }
+    .footer__img {
+        margin: 0 100px; 
+     }
+}
+
+@media (max-width: 767px) {
+    .first__content {
+        margin: 180px auto 80px;
+    }
+    .footer__img {
+        margin: 0 100px; 
+     }
 }
