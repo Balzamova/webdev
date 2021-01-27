@@ -3,33 +3,46 @@
 
 <head id="head">
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
+    <link rel="shortcut icon" href="/webdev/webdev-first/assets/icons/logo.svg">
     <link rel="stylesheet" href="style.css" />
 
     <title>webdev</title>
 </head>
+<!-- ПЕРЕД ОТПРАВКОЙ НА GIT ПОМЕНЯТЬ ССЫЛКИ ВСЕХ КАРТИНОК
+    /webdev/webdev-first/assets/icons/youtube.png
+     !!!-->
 
 <body>
     <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <nav class="header__menu">
+                        <ul class="header__list-left">
+                            <li class="header__item text actived">About</li>
+                            <li class="header__item text">Syllabus</li>
+                        </ul>
+                        <a href="#" class="header__img">
+                            <img src="/webdev-first/assets/icons/logo.svg">
+                        </a>
+                        <ul class="header__list-right">
+                            <li class="header__item text">Projects</li>
+                            <li class="header__item text">FAQ</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
         <div class="content">
             <div class="first">
                 <div class="container">
-                    <div class="header">
-                        <ul class="first__list">
-                            <li class="first__item text active">About</li>
-                            <li class="first__item text">Syllabus</li>
-                            <li class="first__item not-active">
-                                <img src="/webdev/webdev-first/assets/icons/Vector.png">
-                            </li>
-                            <li class="first__item text">Projects</li>
-                            <li class="first__item text">FAQ</li>
-                        </ul>
-                    </div>
-                    <div class="first__content">
+                   <div class="first__content">
                         <h1 class="first__title">your life is WebDev</h1>
                         <p class="first__text">
                             Whatever the approach to development may be, the final
@@ -41,28 +54,29 @@
                         <ul class="first__listsocials">
                             <li class="first__itemsocials">
                                 <a href="mailto:email@webdev.com">
-                                    <img src="/webdev/webdev-first/assets/icons/mail.png">
+                                    <img src="/webdev-first/assets/icons/mail.svg">
                                 </a>
                             </li>
                             <li class="first__itemsocials">
                                 <a href="https://www.facebook.com/">
-                                    <img src="/webdev/webdev-first/assets/icons/facebook.png">
+                                    <img src="/webdev-first/assets/icons/facebook.svg">
                                 </a>
                             </li>
                             <li class="first__itemsocials">
                                 <a href="https://www.instagram.com/">
-                                    <img src="/webdev/webdev-first/assets/icons/insta.png">
+                                    <img src="/webdev-first/assets/icons/insta.svg">
                                 </a>
                             </li>
                             <li class="first__itemsocials">
                                 <a href="https://www.youtube.com/">
-                                    <img src="/webdev/webdev-first/assets/icons/youtube.png">
+                                    <img src="/webdev-first/assets/icons/youtube.svg">
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
+
 
             <div class="rappresent">
                 <div class="container">
@@ -79,7 +93,7 @@
                             </a>
                         </div>
                         <div class="rappresent__img">
-                            <img src="/webdev/webdev-first/assets/images/content-image-1.png" alt="">
+                            <img src="/webdev-first/assets/images/content-image-1.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -90,11 +104,12 @@
                     <div class="community__content">
                         <div class="community__info">
                             <div class="community__icon">
+                                <img src="/webdev-first/assets/icons/userpic.svg" alt="">
                             </div>
                             <h2 class="text-bold">our community
                             </h2>
-                            <p class="text">A hacker is any skilled computer expert 
-                                that uses their technical knowledge to overcome a problem, 
+                            <p class="text">A hacker is any skilled computer expert
+                                that uses their technical knowledge to overcome a problem,
                                 but it can also mean a security hacker in common language
                             </p>
                         </div>
@@ -107,9 +122,12 @@
                                 <div class="community-nav right"></div>
                             </div>
                             <div class="community__images">
-                                <img class="community__img" src="/webdev/webdev-first/assets/images/Rectangle 1.png" alt="">
-                                <img class="community__img" src="/webdev/webdev-first/assets/images/Rectangle 2.png" alt="">
-                                <img class="community__img" src="/webdev/webdev-first/assets/images/Rectangle 3.png" alt="">
+                                <img class="community__img" src="/webdev-first/assets/images/Rectangle 1.jpg"
+                                    alt="">
+                                <img class="community__img" src="/webdev-first/assets/images/Rectangle 2.jpg"
+                                    alt="">
+                                <img class="community__img" src="/webdev-first/assets/images/Rectangle 3.jpg"
+                                    alt="">
                             </div>
                         </div>
                     </div>
@@ -120,7 +138,7 @@
                 <div class="container">
                     <div class="implement__content">
                         <div class="implement__img">
-                            <img src="/webdev/webdev-first/assets/images/content-image-2.png" alt="">
+                            <img src="/webdev-first/assets/images/content-image-2.jpg" alt="">
                         </div>
                         <div class="implement__info">
                             <h2 class="text-bold">Implement right Code</h2>
@@ -142,7 +160,9 @@
                         </h2>
                         <form action="" class="sign__form">
                             <input class="sign__input text" type="email" placeholder="E-mail">
-                            <button class="sign__check"></button>
+                            <button class="sign__check">
+                                <img src="/webdev-first/assets/icons/check-icon.svg" alt="">
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -153,28 +173,29 @@
                     <div class="download__content">
                         <h2 class="text-bold">Download the App
                         </h2>
-                        <p class="text">Machine code was the language of early programs, 
-                            written in the instruction set of the particular machine, 
+                        <p class="text">Machine code was the language of early programs,
+                            written in the instruction set of the particular machine,
                             often in binary notation.
                         </p>
                         <div class="download__buttons">
                             <a href="#" class="download-btn download-left">
                                 <div class="download-btn__text">apple store
                                 </div>
-                                <div class="download-btn__icon apple">
+                                <div class="download-btn__icon">
+                                    <img src="/webdev-first/assets/icons/icon-apple.svg" alt="">
                                 </div>
                             </a>
                             <a href="#" class="download-btn download-rigth">
                                 <div class="download-btn__text">Play Market
                                 </div>
-                                <div class="download-btn__icon android">
+                                <div class="download-btn__icon">
+                                    <img src="/webdev-first/assets/icons/icon-android.svg" alt="">
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
         <footer class="footer">
             <div class="container">
@@ -184,7 +205,7 @@
                         <li class="footer__link text">Privacy</li>
                         <li class="footer__link text">Our teams</li>
                     </ul>
-                    <img class="footer__img" src="/webdev/webdev-first/assets/icons/Vector.png">
+                    <img class="footer__img" src="/webdev-first/assets/icons/logo.svg">
                     <p class="footer__text text">by TonYem for RSS at 2020</p>
                 </div>
             </div>

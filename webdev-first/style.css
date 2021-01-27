@@ -38,49 +38,80 @@ img {vertical-align: top;}
     display: flex;
     flex-direction: column;
 }
-.content {
-    flex: 1 1 auto;
-}
-.first {    
+.header {
     width: 100%;
-    background: black;
+    margin: 0 auto;
+    /*верна ли высота проверить */ 
+    height: 0; 
+    z-index: 50;   
+    /*
+    top: 0;
+    left: 0;
+    */
 }
 .container {
     max-width: 1600px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
 }
-.first .container {
-    justify-content: space-between;
-    align-items: center;
-    background: url(/webdev/webdev-first/assets/images/bg-image.png) center no-repeat;
-}
-.header {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 583px;
-}
-.first__list {
+
+.header__menu {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin: 25px auto 0;
+    justify-content: center;
+    margin-top: 30px;
 }
-.first__item {
+.header__list-left {
+    display: flex;
+    max-width: calc(100% / 2);
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+.header__list-right {
+    display: flex;
+    max-width: calc(100% / 2);
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+.header__item:last-child {
+    margin-right: 0;
+}
+.header__item {
     color: #FFFFFF;
     opacity: 0.8;
+    font-weight: 600;
+    margin-right: 85px;
 }
-.first__item:hover {
+.header__item:hover {
     cursor: pointer;
     opacity: 1;
 }
-.first__item img {
+.header__img img {
     width: 44px;
     height: 44px;
 }
+.actived {
+    border-bottom: 1px solid #FFFFFF;
+    opacity: 1;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+.first {    
+    width: 100%;
+    background: url(/webdev-first/assets/images/bg-image.png) center no-repeat;
+}
+.first .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .first__content {
-    margin: 161px auto 183px;
+    margin: 230px auto 180px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -146,30 +177,31 @@ img {vertical-align: top;}
     align-self: center;
 }
 .rappresent__info h2 {
-    width: 367px;
+    max-width: 367px;
 }
 .rappresent__info p {
-    width: 407px;
+    max-width: 407px;
     margin: 20px auto 30px;
+    color: #4E4E4E;
 }
 .rappresent__text span {
     font-weight: 700;
+    color: #4E4E4E;
 }
 .rappresent__img {
-    width: 407px;
-    margin-left: 248px;
+    max-width: 407px;
+    margin-left: 240px;
 }
 
-.community {
+.community .container {
     background: #F5F6F7;
+    padding: 0 40px;
 }
 .community__content {
     margin: 120px auto 140px;
     display: flex;
     justify-content: flex-end;
 }
-
-
 .community__info {
     display: flex;
     flex-direction: column;
@@ -182,18 +214,18 @@ img {vertical-align: top;}
     margin: 0 auto;
     width: 45px;
     height: 45px;
-    background: url(/webdev/webdev-first/assets/icons/userpic.png);
     border-radius: 50%;
 }
 .community__info h2 {
     margin: 20px auto 10px;
 }
 .community__info p {
-    width: 298px;
+    max-width: 298px;
+    color: #4E4E4E;
 }
 
 .community__pictires {
-    width: 894px;
+    max-width: 894px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -238,8 +270,8 @@ img {vertical-align: top;}
     overflow: hidden;
 }
 .community__img {
-    width: 407px;
-    height: 244px;
+    max-width: 407px;
+    max-height: 244px;
     margin: 0 15px;
 }
 
@@ -249,26 +281,27 @@ img {vertical-align: top;}
     margin: 120px auto 140px;
 }
 .implement__img {
-    width: 407px;
-    height: 582px;
+    max-width: 407px;
+    max-height: 582px;
     margin-right: 140px;
+}
+.implement__img img {
+    object-fit: cover;   
 }
 .implement__info {
     align-self: center;
 }
-implement__info h2 {
-    width: 298px;
+.implement__info h2 {
+    max-width: 298px;
 }
 .implement__info p {
     margin: 20px auto 30px;
-    width: 407px;
+    max-width: 407px;
+    color: #4E4E4E;
 }
 
-.sign {
-    background: black;
-}
 .sign .container {
-    background: url(/webdev/webdev-first/assets/images/pexels-christina-morillo-1181675\ 1.png);
+    background: url(/webdev-first/assets/images/pexels-christina-morillo-1181675\ 1.png);
     text-align: center;
 }
 .sign__info {
@@ -280,6 +313,7 @@ implement__info h2 {
 .sign__form {
     margin-top: 30px;
     display: flex;
+    color: #4E4E4E;
 }
 .sign__input {
     padding: 13px 277px 13px 24px;
@@ -295,14 +329,14 @@ implement__info h2 {
 .sign__check {
     width: 66px;
     height: 46px;
-    background: url(/webdev/webdev-first/assets/icons/check-icon.png) center/16px 13px no-repeat, #00AFDB;
+    background: #00AFDB;
 }
 .sign__check:hover {
-    background: url(/webdev/webdev-first/assets/icons/check-icon.png) center/18px 15px no-repeat, #009CC2;
+    background: #009CC2;
     cursor: pointer;
 }
 
-.download {
+.download .container {
     background: #F5F6F7;
 }
 .download__content {
@@ -310,8 +344,9 @@ implement__info h2 {
     text-align: center;
 }
 .download__content p {
-    width: 480px;
+    max-width: 480px;
     margin: 20px auto 30px;
+    color: #4E4E4E;
 }
 .download__buttons {
     display: flex;
@@ -350,18 +385,11 @@ implement__info h2 {
     justify-content: center;
     align-items: center;
 }
-.apple {
-    background: url(/webdev/webdev-first/assets/icons/apple.png) center/16px 18px no-repeat, #009CC2;
-}
-.android {
-    background: url(/webdev/webdev-first/assets/icons/android.png) center/16px 18px no-repeat, #009CC2;
-}
 
-.footer {    
+.footer .container {    
     background: #000000;
 }
 .footer__navigation {
-    /*width: 1280px; */    
     display: flex;    
     justify-content: space-between;
     align-items: center;
@@ -399,11 +427,11 @@ implement__info h2 {
 }
 
 /* General properties */
+
 .text {
     font-family: Roboto;
     font-size: 14px;
     line-height: 140%;
-    color: #4E4E4E;
 }
 .text-bold {
     font-family: Roboto;
@@ -414,11 +442,10 @@ implement__info h2 {
     text-transform: uppercase;
     color: #373737;
 }
-.not-active:hover {
-    cursor: none;
-}
-.active {
-    border-bottom: 1px solid #FFFFFF;
-    opacity: 1;
-}
 
+@media () {
+    .first__content {
+        /* при адапташке марджины уменьшить и вписать */
+         margin: 230px auto 180px;
+    }
+}
