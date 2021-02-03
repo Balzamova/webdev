@@ -50,7 +50,13 @@ img {vertical-align: top;}
     display: flex;
     flex-direction: column; 
 }
+.header__body {
+    position: relative;
 
+}
+.header__burger {
+    display: none;
+}
 .header__menu {
     display: flex;
     align-items: center;
@@ -567,9 +573,145 @@ img {vertical-align: top;}
 }
 
 @media (max-width: 767px) {
-    .first__content {
-        margin: 180px auto 80px;
+    body.lock {
+        overflow: hidden;
     }
+    .header__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        align-self: flex-end;
+        margin: 30px 200px 0 0;
+        z-index: 3;
+        order: 2;
+
+    }
+    .header__burger:hover {
+        cursor: pointer;
+    }
+    .header__burger:before,
+    .header__burger:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        background-color: white;
+    }
+    .header__burger:before {
+        top: 0;
+    }
+    .header__burger:after {
+        bottom: 0;
+    }    
+    .header__burger span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: white;
+        top: 9px;
+    }
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger.active span {
+        transform: scale(0);
+    }
+    .header__burger.active:hover {
+        cursor: pointer;
+    }
+
+    .header__menu {
+        position: fixed;
+        top: -120%; 
+       
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(41, 41, 41, 0.6);       
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 100px auto;
+        overflow: auto;
+        
+    }
+    .header__menu.active {
+        top: 0;
+    }
+    .header__list-left {
+        display: block;
+        margin: 0;
+        order: 3;
+    }
+    .header__list-right {
+        display: block;
+        margin: 0;
+        order: 4;
+    }
+    .header__item {
+        margin: 30px auto;
+        color: greenyellow;
+    }    
+    .header__img img {
+        order: 1;
+        margin-bottom: 50px;
+    }
+ 
+    .first__content {
+        margin: 80px auto 40px;
+    }
+    .first__title {
+        font-size: 45px;  
+        margin: 0 20px 0;
+    }
+    .first__text {
+        margin: 20px;
+    }
+    .first__listsocials {
+        margin-bottom: 50px;
+    }
+
+    .rappresent__content,
+    .community__content,
+    .implement__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin: 0 ;
+    }
+    .rappresent__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px auto 0;
+    }
+    .first__button {
+        margin: 0;
+    }
+    .rappresent__img img {
+        max-width: 300px;
+        margin: 40px auto;
+    }
+
+
+/* нужно: вытащить лого на уровень с бургером,
+    бургер разместить по центру,
+    при active поднять фон - вылезает сверху какой-то отступ*/
+
     .footer__img {
         margin: 0 100px; 
      }
