@@ -602,6 +602,7 @@ img {vertical-align: top;}
         height: 2px;
         left: 0;
         background-color: white;
+        transition: all 0.5s ease-in-out 0.2s;
     }
     .header__burger:before {
         top: 0;
@@ -615,17 +616,21 @@ img {vertical-align: top;}
         height: 2px;
         background: white;
         top: 9px;
+        transition: all 0.5s ease-in-out 0.2s;
     }
     .header__burger.active:before {
         transform: rotate(45deg);
         top: 9px;
+        transition: all 0.5s ease-in-out 0.2s;
     }
     .header__burger.active:after {
         transform: rotate(-45deg);
         bottom: 9px;
+        transition: all 0.5s ease-in-out 0.2s;
     }
     .header__burger.active span {
         transform: scale(0);
+        transition: all 0.5s ease-in-out 0.2s;
     }
     .header__burger.active:hover {
         cursor: pointer;
@@ -644,9 +649,11 @@ img {vertical-align: top;}
         order: 1;
         z-index: 1;
         background: rgba(41, 41, 41, 0.8);
+        transition: all 0.5s ease-in-out 0.2s;
     }
     .header__body.active {
         top: 0;
+        transition: all 0.5s ease-in-out 0.2s;
     } 
     .header__img img {
         position: relative;
