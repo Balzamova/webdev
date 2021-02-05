@@ -121,7 +121,7 @@ img {vertical-align: top;}
 }
 .first {    
     width: 100%;
-    background: url(/webdev-first/assets/images/bg-image.png) center no-repeat;
+    background: url(/webdev/webdev-first/assets/images/bg-image.png) center no-repeat;
 }
 .first .container {
     display: flex;
@@ -323,7 +323,7 @@ img {vertical-align: top;}
 }
 
 .sign .container {
-    background: url(/webdev-first/assets/images/pexels-christina-morillo-1181675\ 1.png);
+    background: url(/webdev/webdev-first/assets/images/pexels-christina-morillo-1181675\ 1.png);
     text-align: center;
 }
 .sign__info {
@@ -430,14 +430,12 @@ img {vertical-align: top;}
 .footer__link:first-child:after {
     content: "";
     margin: 8px 20px;
-    border-right: 1px solid #4E4E4E;
-    transform: rotate(-90deg);
+    border-right: 1px solid #4E4E4E;    
 }
 .footer__link:last-child:before {
     content: "";
     margin: 8px 20px;
-    border-right: 1px solid #4E4E4E;
-    transform: rotate(-90deg);
+    border-right: 1px solid #4E4E4E;    
 }
 .footer__img {
     width: 44px;
@@ -599,7 +597,7 @@ img {vertical-align: top;}
         content: '';
         position: absolute;
         width: 100%;
-        height: 2px;
+        height: 3px;
         left: 0;
         background-color: white;
         transition: all 0.5s ease-in-out 0.2s;
@@ -613,7 +611,7 @@ img {vertical-align: top;}
     .header__burger span {
         position: absolute;
         width: 100%;
-        height: 2px;
+        height: 3px;
         background: white;
         top: 9px;
         transition: all 0.5s ease-in-out 0.2s;
@@ -622,11 +620,13 @@ img {vertical-align: top;}
         transform: rotate(45deg);
         top: 9px;
         transition: all 0.5s ease-in-out 0.2s;
+        height: 4px;
     }
     .header__burger.active:after {
         transform: rotate(-45deg);
-        bottom: 9px;
+        bottom: 8px;
         transition: all 0.5s ease-in-out 0.2s;
+        height: 4px;
     }
     .header__burger.active span {
         transform: scale(0);
@@ -635,7 +635,6 @@ img {vertical-align: top;}
     .header__burger.active:hover {
         cursor: pointer;
     } 
-
     .header__body {
         display: flex; 
         flex-direction: column;       
@@ -648,7 +647,7 @@ img {vertical-align: top;}
         height: 100%;
         order: 1;
         z-index: 1;
-        background: rgba(41, 41, 41, 0.8);
+        background: rgba(41, 41, 41, 0.95);
         transition: all 0.5s ease-in-out 0.2s;
     }
     .header__body.active {
@@ -656,15 +655,15 @@ img {vertical-align: top;}
         transition: all 0.5s ease-in-out 0.2s;
     } 
     .header__img img {
-        position: relative;
+       
         margin: 0 auto 160px;
         order: 1;
         z-index: 3;
-        top: 480px;
+        top: 550px;
         left: -100px;
     }  
     .header__img img.active {
-        top: -49px;
+        top: -143px;
     }
     .header__menu {               
         display: flex;
@@ -674,7 +673,6 @@ img {vertical-align: top;}
         text-align: center;
         overflow: auto;
         width: 100%;
-       
         margin-bottom: 0;
     }      
     .header__menu-left {
@@ -806,12 +804,52 @@ img {vertical-align: top;}
         margin: 0 auto;
     }
 
+    .sign .container {
+        background-position: center;
+        background-size:cover;
+    }
+    .sign__info {
+        margin: 40px auto 40px;
+    }
+    .sign__form {
+        margin-top: 20px;
+    }
+    .sign__input {
+        padding: 10px 55px 10px 10px;
+    }
 
-
-
-
-
+    .download__content {
+        margin: 40px auto 20px;
+        text-align: center;
+    }
+    .download__content p {
+        max-width: 300px;
+        margin: 20px auto 20px;
+        color: #4E4E4E;
+    }
+    .download__buttons {
+        display: block;
+    }
+    .download-btn {
+        margin: 10px auto;
+    }
+    
+    .footer__navigation {
+        margin: 30px auto 20px;
+    }
+    .footer__list {
+        flex-direction: column;
+    }
+    .footer__link {
+        margin: 10px auto;
+    }
+    .footer__link:first-child:after {
+        content: none;
+    }
+    .footer__link:last-child:before {
+        content: none;
+    }
     .footer__img {
-        margin: 0 100px; 
+        margin: 30px auto; 
      }
 }
