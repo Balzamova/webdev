@@ -1,6 +1,9 @@
-# Simple development # </br>
+# Simple development  </br>
 
-## HTML & CSS (with flex) ## </br>
+### Used frameworks: </br>
+1. HTML 
+2. CSS 
+*   Flex
 
 https://balzamova.github.io/webdev/webdev-first/ (Task: https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markups/level-1/webdev/webdev-ru.md)
 
