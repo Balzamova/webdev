@@ -12,5 +12,5 @@
 *   *easy code for burger menu*
  
 #### Sourse: **The Rolling Scopes School.** 
-#### For more information: [link](https://docs.rs.school/#/)
+For more information: [link](https://docs.rs.school/#/)
 #### Task: [link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markups/level-1/webdev/webdev-ru.md)
