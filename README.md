@@ -1,6 +1,6 @@
-# Simple development  </br>
+# Layout single page
 
-## My ready page-proof: [link](https://balzamova.github.io/webdev/webdev-first/)
+## Project: [link](https://balzamova.github.io/webdev/webdev-first/)
 
 ### Used frameworks: </br>
 1. **HTML**
